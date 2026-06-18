@@ -1,0 +1,161 @@
+.movie-hero {
+            width: 100%;
+            height: 340px;
+            background-size: cover;
+            background-position: center 20%;
+            position: relative;
+        }
+
+        .movie-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(15,15,15,0.3) 0%, #0f0f0f 100%);
+        }
+
+        .movie-detail {
+            display: flex;
+            gap: 40px;
+            padding: 0 40px 60px;
+            margin-top: -120px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .movie-left {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-self: flex-start;
+            padding-top: 30px;
+        }
+
+        .movie-poster {
+            width: 220px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #2a2a2a;
+        }
+
+        .movie-poster img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .movie-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 220px;
+        }
+
+        .movie-actions .btn-primary,
+        .movie-actions .btn-secondary {
+            width: 100%;
+        }
+
+        .movie-info {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding-top: 130px;
+        }
+
+        .movie-title {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .movie-meta-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .movie-tag {
+            font-size: 13px;
+            color: #aaaaaa;
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 4px;
+            padding: 4px 10px;
+        }
+
+        .movie-desc {
+            font-size: 15px;
+            color: #aaaaaa;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        .movie-crew {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .crew-item {
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+
+        .crew-label {
+            color: #ffffff;
+            font-weight: bold;
+            margin-right: 6px;
+        }
+
+        .player-section {
+            padding: 0 40px 60px;
+        }
+
+        .player-wrapper {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #2a2a2a;
+            background: #000;
+        }
+
+        #player {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .movie-detail {
+                flex-direction: column;
+                padding: 0 20px 40px;
+                margin-top: -60px;
+                gap: 20px;
+            }
+
+            .movie-left {
+                padding-top: 0;
+                align-items: center;
+            }
+
+            .movie-poster {
+                width: 160px;
+            }
+
+            .movie-actions {
+                width: 160px;
+            }
+
+            .movie-info {
+                padding-top: 0;
+            }
+
+            .movie-title {
+                font-size: 24px;
+            }
+
+            .player-section {
+                padding: 0 20px 40px;
+            }
+        }
